@@ -18,9 +18,11 @@ jobs:
   my_test_job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - name: MyStep 1
         run: echo Hello, world! From My Step 1
+
+      - name: MyStep 2
+        run: ls -la
 
 #   my_test_job2:
 #     runs-on: ubuntu-latest
